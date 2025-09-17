@@ -1,7 +1,38 @@
 A SUI Mini Wallet App, using Connect Wallet and ZKLogin that generates new wallet per user, the ZKlogin is using Google Consent Window
 
 Demo: https://sui.iamtzar.com/
+## Requirements
 
+### System Requirements
+- **Node.js**: Version 18.x or higher
+- **npm**: Version 8.x or higher
+- **Git**: For cloning the repository
+
+### Development Requirements
+- **Next.js**: 13.x or higher
+- **React**: 18.x or higher
+- **TypeScript**: 5.x or higher
+
+### Production Deployment Requirements
+- **Ubuntu Server**: 22.04 LTS (recommended)
+- **PM2**: Process manager for Node.js applications
+- **Nginx**: Web server and reverse proxy
+- **SSL Certificate**: For HTTPS (Let's Encrypt or AWS Certificate Manager)
+
+### AWS Services Required
+- **EC2**: t3.small or larger instance
+- **CloudFront**: CDN distribution
+- **Route 53**: DNS management (optional)
+- **Certificate Manager**: SSL certificates (optional)
+
+### External Services
+- **Google OAuth**: Client ID for ZKLogin authentication
+- **SUI Network**: Mainnet or testnet access
+
+### Environment Variables
+```
+NEXT_PUBLIC_GOOGLE_CLIENT_ID=your_google_client_id
+```
 
 # AWS Deployment Guide
 
